@@ -40,4 +40,14 @@
       <view class="home-king-kong-bottom">最高享9折火热预定中</view>
     </view>
   </view>
+  <view class="home-user">
+    <view class="home-user-left">
+      <view class="home-user-score">我的积分 22</view>
+      <view>可兑换喜茶券和丰富灵感周边</view>
+    </view>
+    <view class="home-user-right">
+      <image class="home-user-code" src="/src/assets/images/home/member-code.png" />
+      <view>会员码</view>
+    </view>
+  </view>
 </view>
