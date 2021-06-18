@@ -1,0 +1,43 @@
+<view class="home-page current-page">
+  <view class="head-section">
+    <my-swiper
+      custom-class="swiper"
+      items="{{ bannerList }}"
+      preview="{{ false }}"
+      circular="{{ true }}"
+      indicator="line"
+    />
+  </view>
+  <view class="home-service">
+    <view class="home-service-wrap">
+      <view class="home-service-item">
+        <image class="home-service-item-image" src="/src/assets/images/home/invite.png" />
+        <view class="home-service-item-modal" />
+        <view class="home-service-item-title">门店自取</view>
+        <view class="home-service-item-desc">下单免排队</view>
+      </view>
+      <view class="home-service-item">
+        <image class="home-service-item-image" src="/src/assets/images/home/take-out.png" />
+        <view class="home-service-item-modal" />
+        <view class="home-service-item-title">外卖</view>
+        <view class="home-service-item-desc">无需接触 送喜到家</view>
+      </view>
+    </view>
+  </view>
+  <view class="home-king-kong">
+    <view class="home-king-kong-item">
+      <view class="home-king-kong-top">
+        <image class="home-king-kong-icon" src="/src/assets/images/home/gift.png" />
+        <text>喜茶百货</text>
+      </view>
+      <view class="home-king-kong-bottom">新装气泡水畅饮更尽兴</view>
+    </view>
+    <view class="home-king-kong-item">
+      <view class="home-king-kong-top">
+        <image class="home-king-kong-icon" src="/src/assets/images/home/drinks.png" />
+        <text>阿喜团餐</text>
+      </view>
+      <view class="home-king-kong-bottom">最高享9折火热预定中</view>
+    </view>
+  </view>
+</view>

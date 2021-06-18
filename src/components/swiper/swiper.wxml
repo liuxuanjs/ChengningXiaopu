@@ -1,0 +1,29 @@
+<view class="y-swiper {{ customClass }}">
+  <view wx:if="{{ video }}" hidden="{{ type === 1 }}" class="y-swiper-video-wrapper">
+    <video id="myVideo" class="y-swiper-video y-swiper-item" controls autoplay="{{ videoAutolay }}" src="{{ video }}" />
+  </view>
+
+  <swiper class="swiper-content" wx:if="{{ imgList.length }}" hidden="{{ type === 2 }}" indicator-dots="{{ false }}" circular="{{ circular }}"
+    autoplay="{{ autoplay }}" current="{{ current }}" interval="{{ interval }}" duration="{{ duration }}"
+    vertical="{{ vertical }}" bindchange="onChange" bindtap="onPreview">
+    <swiper-item wx:for="{{ imgList }}" wx:key="img">
+      <my-image img-wrapper-class="y-swiper-item" src="{{ item.img }}" width="{{ width }}"
+        placeholder="{{ placeholder }}" />
+    </swiper-item>
+  </swiper>
+
+  <view wx:if="{{ video && imgList.length }}" class="y-swiper-type">
+    <text class="y-swiper-type-item {{ type === 2 ? 'y-swiper-type-item-active' : '' }}" data-type="{{ 2 }}"
+      bindtap="onSwitchType">视频</text>
+    <view class="y-swiper-type-item {{ type === 1 ? 'y-swiper-type-item-active' : '' }}" data-type="{{ 1 }}"
+      bindtap="onSwitchType">图片</view>
+  </view>
+
+  <view wx:if="{{ indicator && type === 1 }}" class="y-swiper-indicators y-swiper-indicators-{{indicator}}">
+    <text wx:for="{{ imgList }}" wx:for-index="i" wx:key="url"
+      class="y-swiper-indicator {{ i === index ? 'y-swiper-indicator-active' : ''}}">
+      <text class="y-swiper-indicator-text" wx:if="{{ indicator === 'number' }}">{{ (i + 1) + '/' + imgList.length
+        }}</text>
+    </text>
+  </view>
+</view>

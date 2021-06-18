@@ -1,0 +1,85 @@
+/* 按钮 */
+.y-button {
+  line-height: 88rpx;
+  padding: 0;
+  margin: 0;
+  border-radius: 44rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background: linear-gradient(134deg, var(--primary-color-gradient-from--) 0%, var(--primary-color-gradient-to--) 100%);
+}
+
+.y-button_normal {
+  color: #333;
+  background: #fff;
+  border: 1rpx solid var(--primary-color--);
+}
+
+/* 按钮 */
+
+
+/* van button */
+van-button button.van-button {
+  width: auto;
+}
+
+van-button button.van-button--primary {
+  line-height: 88rpx;
+  border: none;
+  border-radius: 44rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background: var(--primary-color--);
+}
+
+van-button button.van-button--block {
+  display: flex;
+  width: 100%;
+}
+
+van-button button.van-button--small {
+  line-height: 60rpx;
+  font-size: 28rpx;
+  border-radius: 30rpx;
+}
+
+van-button button.van-button--large {
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 36rpx;
+}
+
+van-button button.van-button--square {
+  border-radius: 0;
+}
+
+van-button button.van-button--disabled {
+  opacity: 1;
+}
+/* van button */
+
+
+/* van cell */
+van-cell .van-field__label {
+  color: #333;
+}
+
+van-cell .van-field__input {
+  color: #666;
+}
+
+van-cell .van-field__input--disabled {
+  color: var(--placeholder-color--);
+}
+
+van-cell .cell-align-left .van-cell__title {
+  flex: initial;
+  width: 6.2em;
+}
+
+van-cell .cell-align-left .van-cell__value {
+  padding-left: 24rpx;
+  text-align: left;
+}
+
+/* van cell */

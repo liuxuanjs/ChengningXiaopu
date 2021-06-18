@@ -1,0 +1,79 @@
+.y-swiper {
+  position: relative;
+  height: 300rpx;
+}
+
+.y-swiper .swiper-content {
+  height: 100%;
+}
+
+.y-swiper-item {
+  width: 100%;
+  height: 100%;
+}
+
+.y-swiper-video-wrapper {
+  height: 100%;
+}
+
+.y-swiper-indicators-line {
+  position: absolute;
+  bottom: 20rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.y-swiper-indicators-line .y-swiper-indicator {
+  display: inline-block;
+  width: 25rpx;
+  height: 4rpx;
+  background: #fff;
+  opacity: 0.4;
+}
+
+.y-swiper-indicators-line .y-swiper-indicator-active {
+  opacity: 1;
+}
+
+.y-swiper-indicators-number {
+  position: absolute;
+  bottom: 30rpx;
+  right: 28rpx;
+  line-height: 40rpx;
+  padding: 0 28rpx;
+  font-size: 24rpx;
+  border-radius: 4rpx;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.y-swiper-indicators-number .y-swiper-indicator {
+  display: none;
+}
+
+.y-swiper-indicators-number .y-swiper-indicator-active {
+  display: block;
+}
+
+
+.y-swiper-type {
+  position: absolute;
+  left: 50%;
+  bottom: 30rpx;
+  transform: translateX(-50%);
+  border-radius: 4rpx;
+  background: rgba(0, 0, 0, .3);
+}
+
+.y-swiper-type-item {
+  display: inline-block;
+  line-height: 44rpx;
+  padding: 0 28rpx;
+  font-size: 22rpx;
+  color: #FFF;
+  opacity: .5;
+}
+
+.y-swiper-type-item-active {
+  opacity: 1;
+}

@@ -1,0 +1,5 @@
+@import '../../../miniprogram_npm/@vant/weapp/common/index.wxss';
+@import './variable.wxss';
+@import './override.wxss';
+@import './iconfont.wxss';
+@import './common.wxss';

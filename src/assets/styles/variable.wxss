@@ -1,0 +1,36 @@
+page {
+  /* 主色调颜色 */
+  --primary-color--: #dbb358;
+
+  /* 默认文字颜色 */
+  --text-color--: #333;
+
+  /* 占位符颜色 */
+  --placeholder-color--: #c8c9cc;
+
+  /* 主色渐变开始色 */
+  --primary-color-gradient-from--: #cea850;
+
+  /* 主色渐变结束色 */
+  --primary-color-gradient-to--: #e0b75b;
+
+  /* 页面背景色 */
+  --page-background-color--: #f5f6f7;
+
+  /* 分割线颜色 */
+  --hairline-color--: #EDEEEF;
+}
+
+/**
+ * 复写vant UI库变量
+ */
+page {
+  /* 复写van-popup圆角大小 */
+  --popup-round-border-radius: 4px;
+  
+  /* 复写van-picker工具栏确认按钮颜色 */
+  --picker-confirm-action-color: #1B1B1B;
+
+  /* 复写van-tab滑块的颜色 */
+  --tabs-bottom-bar-color: var(--text-color--);
+}

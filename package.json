@@ -1,0 +1,31 @@
+{
+  "name": "ChengningXiaopu",
+  "version": "0.0.1",
+  "description": "承宁小铺",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liu-fatty/ChengningXiaopu.git"
+  },
+  "author": "liuxuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liu-fatty/ChengningXiaopu/issues"
+  },
+  "homepage": "https://github.com/liu-fatty/ChengningXiaopu#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.6.9"
+  },
+  "devDependencies": {
+    "mdast-util-from-markdown": "^0.8.5",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.7.0",
+    "stylelint-config-css-modules": "^2.2.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.1.0",
+    "stylelint-no-unsupported-browser-features": "^4.1.4",
+    "stylelint-order": "^4.0.0"
+  }
+}

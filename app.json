@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "src/pages/home/home",
+    "src/pages/user/mine/mine",
+    "src/pages/place-order/place-order",
+    "src/pages/recommend/recommend",
+    "src/pages/order/detail/detail",
+    "src/pages/order/list/list"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于判断您当前所处的门店"
+    }
+  },
+  "tabBar": {
+    "color": "#AAAAAA",
+    "selectedColor": "#000",
+    "borderStyle": "white",
+    "backgroundColor": "#F7F7F7",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "src/pages/home/home",
+        "iconPath": "src/assets/images/tab-bar/home.png",
+        "selectedIconPath": "src/assets/images/tab-bar/home-selected.png"
+      },
+      {
+        "text": "点单",
+        "pagePath": "src/pages/place-order/place-order",
+        "iconPath": "src/assets/images/tab-bar/place-order.png",
+        "selectedIconPath": "src/assets/images/tab-bar/place-order-selected.png"
+      },
+      {
+        "text": "百货",
+        "pagePath": "src/pages/recommend/recommend",
+        "iconPath": "src/assets/images/tab-bar/recommend.png",
+        "selectedIconPath": "src/assets/images/tab-bar/recommend-selected.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "src/pages/user/mine/mine",
+        "iconPath": "src/assets/images/tab-bar/mine.png",
+        "selectedIconPath": "src/assets/images/tab-bar/mine-selected.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F5F6F7",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

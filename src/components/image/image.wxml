@@ -1,0 +1,10 @@
+<view class="y-image img-wrapper-class {{ customClass }}" bindtap="onPreview">
+  <block wx:if="{{ status === -1 }}" />
+  <image wx:elif="{{ status === 2 }}" src="{{ placeholder }}" mode="{{ mode }}"
+    class="y-image-img y-image-placeholder img-class {{ customClass }}" />
+  <image wx:else src="{{ imgSrc || placeholder }}" mode="{{ mode }}" lazy-load="{{ lazyLoad }}"
+    show-menu-by-longpress="{{ showMenuByLongpress }}" class="y-image-img img-class" bindload="onLoad"
+    binderror="onError" />
+
+  <image wx:if="{{ status === 0 }}" class="y-image-loading" src="/src/assets/images/loading/loading1.svg" />
+</view>
